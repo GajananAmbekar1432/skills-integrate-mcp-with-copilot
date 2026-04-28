@@ -15,6 +15,21 @@
     <main>
       <section id="activities-container">
         <h3>Available Activities</h3>
+        <div id="filter-toolbar">
+          <input type="text" id="search-input" placeholder="Search activities..." aria-label="Search activities" />
+          <select id="category-filter" aria-label="Filter by category">
+            <option value="">All Categories</option>
+            <option value="Academic">Academic</option>
+            <option value="Sports">Sports</option>
+            <option value="Arts">Arts</option>
+          </select>
+          <select id="sort-select" aria-label="Sort activities">
+            <option value="name-asc">Name (A–Z)</option>
+            <option value="name-desc">Name (Z–A)</option>
+            <option value="spots-asc">Spots Left (fewest first)</option>
+            <option value="spots-desc">Spots Left (most first)</option>
+          </select>
+        </div>
         <div id="activities-list">
           <!-- Activities will be loaded here -->
           <p>Loading activities...</p>

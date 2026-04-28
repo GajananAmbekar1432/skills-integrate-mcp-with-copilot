@@ -198,3 +198,39 @@ footer {
   padding: 20px;
   color: #666;
 }
+
+/* Filter toolbar */
+#filter-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#filter-toolbar input,
+#filter-toolbar select {
+  flex: 1 1 150px;
+  padding: 8px 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* Category badge on activity cards */
+.category-badge {
+  display: inline-block;
+  margin-bottom: 8px;
+  padding: 2px 8px;
+  background-color: #e8eaf6;
+  color: #3949ab;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+@media (max-width: 480px) {
+  #filter-toolbar input,
+  #filter-toolbar select {
+    flex: 1 1 100%;
+  }
+}
